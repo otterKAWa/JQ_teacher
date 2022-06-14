@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>child filter</title>
+        <style>
+            .col {
+                width: 100px;
+                height: 100px;
+            }
+
+            /* .col:nth-child(2n-1) {
+                background: red;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <span>span1</span>
+                <div class="col">col1</div>
+                <div class="col">col2</div>
+                <div class="col">col3</div>
+                <!-- <div class="col">col4</div>
+                <div class="col">col5</div>
+                <div class="col">col6</div>
+                <div class="col">col7</div>
+                <div class="col">col8</div>
+                <div class="col">col9</div>
+                <div class="col">col10</div>
+                <div class="col">col11</div>
+                <div class="col">col12</div> -->
+            </div>
+
+            <div class="row">
+                <div class="col">col1</div>
+                <div class="col">col2</div>
+                <div class="col">col3</div>
+                <!-- <div class="col">col4</div>
+                <div class="col">col5</div>
+                <div class="col">col6</div>
+                <div class="col">col7</div>
+                <div class="col">col8</div>
+                <div class="col">col9</div>
+                <div class="col">col10</div>
+                <div class="col">col11</div>
+                <div class="col">col12</div> -->
+            </div>
+
+            <div class="row">
+                <div class="col">col1</div>
+            </div>
+        </div>
+
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script>
+            // $(".col:eq(0)").css("background", "yellow");
+            // $(".col:first-child").css("background", "yellow");
+            // $(".col:first-of-type").css("background", "red");
+            // $(".col:nth-child(1)").css("background", "red");
+            // $(".col:nth-of-type(3)").css("background", "red");
+            // $(".col:only-child").css("background", "red");
+            $("span:only-of-type").css("background", "red");
+        </script>
+    </body>
+</html>
