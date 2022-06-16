@@ -56,15 +56,15 @@
         <script>
             $(".btn").click(function () {
                 console.log("this", $(this).is(":contains('S')"));
-
+                $(this).addClass("active").siblings().removeClass("active");
                 if ($(this).is(":contains('S')")) {
-                    $("p").toggleClass("fontS");
+                    $("p").removeClass().addClass("fontS");
                 }
                 if ($(this).is(":contains('M')")) {
-                    $("p").toggleClass("fontM");
+                    $("p").removeClass().addClass("fontM");
                 }
                 if ($(this).is(":contains('L')")) {
-                    $("p").toggleClass("fontL");
+                    $("p").removeClass().addClass("fontL");
                 }
             });
         </script>
