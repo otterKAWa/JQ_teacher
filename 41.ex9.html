@@ -99,6 +99,16 @@
                     move("left", "-=");
                 }
             });
+
+            $(document).on("keydown", function (e) {
+                console.log("keydown", e.keyCode);
+                if (e.keyCode === 39) {
+                    move("left", "+=");
+                }
+                if (e.keyCode === 37) {
+                    move("left", "-=");
+                }
+            });
         </script>
     </body>
 </html>
